@@ -1,0 +1,5 @@
+streamlit==0.91.0      # This version might change based on when you're installing.
+streamlit-folium==0.3.0  # Double-check this version too.
+pandas==1.3.3           # As of my last training cut-off in September 2022.
+folium==0.12.1          # This is the latest version as of September 2022.
+geojson==2.5.0          # Latest version as of September 2022.
