@@ -30,8 +30,8 @@ for _, row in df.iterrows():
 # Create a FeatureCollection from the list of features
 feature_collection = FeatureCollection(features)
 
-# Initialize a base map
-m = folium.Map(location=[0, 0], zoom_start=2)
+# Initialize a base map centered on the US
+m = folium.Map(location=[39.50, -98.35], zoom_start=4)
 
 # Add the GeoJSON data directly to the map
 geojson_layer = folium.GeoJson(feature_collection, name="geojson").add_to(m)
@@ -57,3 +57,7 @@ search = Search(
 
 # Display the map in Streamlit
 folium_static(m)
+
+# Add a link to the GitHub repo
+st.markdown("#### Source Code:")
+st.markdown("[GitHub Repository](https://github.com/rmkenv/Coops_streamlit)")
